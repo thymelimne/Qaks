@@ -192,7 +192,7 @@ function drawNote(note){
     color = "#FF0000"
     color = getColorFromNote(value)
     var circle = {
-        radius: radius,
+        radius: 14,
         loc: loc,
         color: color,
         age: 0,
