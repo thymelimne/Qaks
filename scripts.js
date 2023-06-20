@@ -1,3 +1,4 @@
+console.log("Starting JavaScript");
 const synth = new Tone.PolySynth(Tone.Synth).toDestination();
 var adsr = [.01, .02, .5, .8];
 //*
