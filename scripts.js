@@ -82,7 +82,7 @@ function playNote(note) {
 }
 
 document.addEventListener("keydown", function(e){
-    //initialKeyPressed = true;
+    console.log("keydown");
     note = keynotes[e.key];
     playNote(note);
     drawNote(note);
