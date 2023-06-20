@@ -84,6 +84,7 @@ function playNote(note) {
 
 document.addEventListener("keydown", function(e){
     console.log("keydown");
+    initialKeyPressed = true;
     note = keynotes[e.key];
     playNote(note);
     drawNote(note);
@@ -100,18 +101,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function headerTextStep(){
     element = document.getElementById("introText");
     if (initialKeyPressed){
-        stepsSinceInitialKeyPressed = stepsSinceInitialKeyPressed + 1;
-        if (stepsSinceInitialKeyPressed > stepsToWaitBeforeFadingHeaderText){
-            doneWaitingBeforeFadingHeaderText = true;
-        }
-        if (doneWaitingBeforeFadingHeaderText){
-            headerTextOpacity = .01;
-        }f
+        element.style.opacity = 0;
     }
-    if (headerTextOpacity <= 0){
-        doneFadingHeaderText = true;
-    }
-    element.style.opacity = headerTextOpacity;
 }
 //*/
 
