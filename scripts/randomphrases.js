@@ -4,7 +4,7 @@ randomphrases = [
     "Fun for part of the family!",
     "Eyyy...",
     "Is this enough?",
-    "Rather be liked than lonely",
+    "Rather be at least liked than lonely",
     "Rather be hated than abandoned",
     "Who are we",
     "n = 3",

@@ -48,3 +48,6 @@ keynotes = {
     "z":"F2",
     "a":"Fb2"
 };
+console.log("0: "+keynotes[0]);
+console.log("1: "+keynotes[1]);
+console.log("5: "+keynotes[5]);
